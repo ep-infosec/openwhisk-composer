@@ -1,0 +1,67 @@
+{
+  "license": "Apache-2.0",
+  "name": "openwhisk-composer",
+  "version": "0.12.0",
+  "description": "Composer is a new programming model for composing cloud functions built on Apache OpenWhisk.",
+  "homepage": "https://github.com/apache/openwhisk-composer",
+  "main": "composer.js",
+  "scripts": {
+    "test": "standard && mocha"
+  },
+  "bin": {
+    "compose": "./bin/compose.js",
+    "deploy": "./bin/deploy.js"
+  },
+  "files": [
+    "bin/",
+    "client.js",
+    "composer.js",
+    "conductor.js",
+    "fqn.js",
+    "docs/*.md",
+    "samples/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/openwhisk-composer.git"
+  },
+  "keywords": [
+    "functions",
+    "serverless",
+    "composer",
+    "openwhisk"
+  ],
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "openwhisk": "^3.21.4",
+    "terser": "^3.8.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "pre-commit": "^1.2.2",
+    "standard": "^12.0.1"
+  },
+  "author": {
+    "name": "Olivier Tardieu",
+    "email": "tardieu@us.ibm.com"
+  },
+  "contributors": [
+    {
+      "name": "Kerry Chang",
+      "email": "kerry.chang@ibm.com"
+    },
+    {
+      "name": "Rodric Rabbah",
+      "email": "rabbah@us.ibm.com"
+    },
+    {
+      "name": "Nick Mitchell",
+      "email": "nickm@us.ibm.com"
+    }
+  ],
+  "standard": {
+    "ignore": [
+      "/bin/"
+    ]
+  }
+}
